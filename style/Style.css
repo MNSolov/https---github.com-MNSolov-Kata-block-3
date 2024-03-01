@@ -25,18 +25,23 @@
     font-style: italic;
 }
 
-@media (min-width: 320px) {
-    .picture {
-        width: 320px;
-    }
-    
-}
+
+
+
 
 html {
     font-family: "TT Lakes";
     font-style: normal;
     color: #1B1C21;
     font-size: 14px;
+}
+
+/*.divider--hidden {
+    display: none;
+}*/
+
+.call {
+    margin-left: 50%;
 }
 
 .item__link {
@@ -87,8 +92,17 @@ body {
     list-style: none;
     /*flex-grow: 0;*/
     justify-content: flex-start;
-    
+    align-items: flex-start;
     overflow: visible;
+}
+
+.container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*height: 320px;*/
+    align-content: flex-start;
 }
 
 .item {
@@ -113,6 +127,9 @@ body {
     font-style: bold;
     align-items: center;
     margin-left: 15px;
+    width: 132px;
+    height: 24px;
+    /*margin-right: 500px;*/
 }
 
 .expand:link {
@@ -120,9 +137,10 @@ body {
 }
 
 .info {
-    padding: 15px;
+    padding-left: 15px;
     line-height: 1.3;
     letter-spacing: 0.2px;
+    width: 17%;
 }
 
 .header {
@@ -137,9 +155,79 @@ body {
 .main {
     background: #F8F8F8;
     display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .expand__img {
     
+}
+
+.picture {
+    width: 320px;
+    
+   /* order: 0;*/
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+
+    .divider--hidden {
+        display: none;
+    }
+    .call--hidden {
+        display: none;
+    }
+    .chat--hidden {
+        display: none;
+    }
+    .profile--hidden {
+        display: none;
+    }
+
+   /* .info {
+        width: 20%;
+    }*/
+    
+}
+
+@media (min-width: 768px) {
+    
+    /*.divider--hidden {
+        display: none;
+    }*/
+    
+   /* .picture {
+        order: -1;
+    }
+    .info {
+        order: -1;
+    }
+    .nav-panel {
+        order: -1;
+    }
+    
+    .h1 {
+        order: -1;
+    }
+   /* .expand {
+        order: 5100;
+    }*/
+    
+    .info {
+        width: 20%;
+    }
+
+    .container {
+        height: 320px;
+    }
+    
+    .picture {
+        width: 360px;
+        margin-left: 5%;
+        border-radius: 6px;
+    }
 }
