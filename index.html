@@ -7,44 +7,46 @@
         <link href="style/Style.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
-        <header class="header">
-            <a href="#" class="burger"><img src="icons\burger.svg"></a>
-            <img class="divider divider--hidden" src="img\divider.svg"></a>
-            <a href="#" class="logo"><img src="logo\logo.svg"></a>
-            <a href="#" class="call call--hidden"><img src="icons\call.svg"></a>
-            <a href="#" class="chat chat--hidden"><img src="icons\chat.svg"></a>
-            <a href="#" class="profile profile--hidden"><img src="icons\profile.svg"></a>
-            <img class="divider" src="img\divider.svg">
-            <a href="#" class="repair"><img src="icons\repair.svg"></a>
-            <a href="#" class="checkstatus"><img src="icons\checkstatus.svg"></a>
+    <body class="page">
+        <header class="header page__header">
+            <ul class="sub-menu">
+                <li class="sub-menu__button sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="icons\burger.svg"></a></li>
+                <li class="sub-menu__divider sub-menu__divider--mobile"><div class="sub-menu__line"></div></li>
+                <li class="sub-menu__button  sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="logo\logo.svg"></a></li>
+                <li class="sub-menu__button  sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="icons\call.svg"></a></li>
+                <li class="sub-menu__button  sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="icons\chat.svg"></a></li>
+                <li class="sub-menu__button  sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="icons\profile.svg"></a></li>
+                <li class="sub-menu__divider"><div class="sub-menu__line"></div></li>
+                <li class="sub-menu__button  sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="icons\repair.svg"></a></li>
+                <li class="sub-menu__button  sub-menu__button--mobile  sub-menu__button--tablet"><a href="#" class="sub-menu__link"><img src="icons\checkstatus.svg"></a></li>
+            </ul>
         </header>
         <main class="main">
-            <div class="header2">
-                <h1 class="h1">Услуги и сервисы</h1>
-                <ul class="menu-small">
-                    <li class="button"><a class="button__link" href="#">Оставить заявку <img src="icons\repair.svg"></a></li>
-                    <li class="button"><a class="button__link" href="#">Статус ремонта <img src="icons\checkstatus.svg"></a></li>
+            <div class="sub-header">
+                <h1 class="title sub-header__title">Услуги и сервисы</h1>
+                <ul class="sub-menu sub-header__sub-menu">
+                    <li class="sub-menu__button sub-menu__button--big"><a class="sub-menu__link" href="#">Оставить заявку <img src="icons\repair.svg"></a></li>
+                    <li class="sub-menu__button sub-menu__button--big"><a class="sub-menu__link" href="#">Статус ремонта <img src="icons\checkstatus.svg"></a></li>
                 </ul>
             </div>
-            <nav class="nav-panel">
-                <ul class="menu">
-                    <li class="item"><a class="item__link" href="#">Ремонтируемые устройства</a></li>
-                    <li class="item"><a class="item__link" href="#">Дополнительные услуги</a></li>
-                    <li class="item"><a class="item__link" href="#">Ремонтируемые бренды</a></li>
-                    <li class="item"><a class="item__link" href="#">Цены на услуги</a></li>
-                    <li class="item"><a class="item__link" href="#">Адреса сервисных центров</a></li>
-                    <li class="item"><a class="item__link" href="#">Специальные цены</a></li>
-                    <li class="item"><a class="item__link" href="#">Отзывы</a></li>
+            <nav class="nav-panel main__nav-panel">
+                <ul class="menu nav-panel__menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Ремонтируемые устройства</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Дополнительные услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Ремонтируемые бренды</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Цены на услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Адреса сервисных центров</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Специальные цены</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
                 </ul>
             </nav>
-            <section class="container">
-                <article class="info">
+            <section class="about-company main__about-company">
+                <article class="text about-company__text">
                     <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                     <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.<br>Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </article>
-                <a href="#" class="expand"><img class="expand__img" src="icons\expand.svg">Читать далее</a>
-                <img class="picture picture--order" src="img\Picture.jpg" alt="Изображение сервисного центра">
+                <a class="expand about-company__expand" href="#"><img class="about-company__img" src="icons\expand.svg">Читать далее</a>
+                <img class="picture about-company__picture" src="img\Picture.jpg" alt="Изображение сервисного центра">
             </section>
         </main>
     </body>
