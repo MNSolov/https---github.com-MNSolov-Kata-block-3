@@ -76,10 +76,12 @@ body {
     justify-content: space-between;
     font-weight: 700;
     width: 175px;
+    color: #1B1C21;
 }
 
 .button__link:link {
     text-decoration: none;
+    color: #1B1C21;
 }
 
 .header2 {
@@ -125,6 +127,14 @@ body {
     align-items: baseline;
     overflow: scroll;
     margin-left: 1%;
+}
+
+.menu::-webkit-scrollbar{
+    display:none;
+}
+
+.menu::-webkit-scrollbar-thumb{
+    display:none;
 }
 
 .container {
